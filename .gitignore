@@ -371,3 +371,5 @@ xcuserdata/
 
 # Visual Studio Code
 .vscode/
+
+**/build/**/*
