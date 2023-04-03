@@ -348,3 +348,26 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+# General macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3\n*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# JetBrains
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
