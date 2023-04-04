@@ -34,7 +34,7 @@ class Program
             {
                 int error = Marshal.GetLastPInvokeError();
                 //var message = Marshal.GetLastPInvokeErrorMessage();
-                Console.WriteLine($"创建命名管道时发生错误，错误代码：{error},{message}");
+                Console.WriteLine($"创建命名管道时发生错误，错误代码：{error}");
                 return;
             }
         }
