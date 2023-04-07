@@ -8,22 +8,11 @@
 
 int main()
 {
-    // 打开管道文件
-    // int pipe_fd = open("/Users/jerryding/src/mypipe", O_WRONLY);
 
-    // // 向管道中写入数据
-    // std::string data = "Hello from process B!";
-    // write(pipe_fd, data.c_str(), data.size());
-
-    // // 关闭管道文件
-    // close(pipe_fd);
-
-    // return 0;
-
-    //mkfifo("/Users/jerryding/src/mypipe", 0666);
+    auto pipe_name = "/tmp/myfifo3";
 
     // 打开命名管道
-    int pipeHandle = open("/Users/jerryding/src/mypipe", O_WRONLY);
+    int pipeHandle = open(pipe_name, O_WRONLY);
 
     if (pipeHandle == -1)
     {
@@ -37,5 +26,4 @@ int main()
 
     // 关闭管道
     close(pipeHandle);
-
 }
